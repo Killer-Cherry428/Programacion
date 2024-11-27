@@ -5,8 +5,16 @@ print("Programa para encontrar los litros de leche producido en una semana en la
 
 
 #Problema huevos
-aves=int(input("Ingrese el numero total de aves que hay en la granja. "))
 
-gallinas=aves/3
-ponedoras3=gallinas/2
-ponedoras5=gallinas
+def huevos():
+    aves=int(input("Ingrese el numero total de aves que hay en la granja. "))
+
+    gallinas=aves//3
+    ponedoras=gallinas//2
+
+    p3=ponedoras*10
+    p5=ponedoras*6
+
+    print("La gallinas ponen un total de ",p3+p5," huevos en un mes de 30 dias")
+
+huevos()
